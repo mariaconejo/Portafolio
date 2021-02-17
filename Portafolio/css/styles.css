@@ -358,6 +358,70 @@ ul {
 .glitch-name {
   padding-top: 560px; }
 
+.about-info {
+  margin-left: 110px;
+  padding-top: 200px;
+  float: left; }
+
+p {
+  font-size: 24px;
+  font-weight: lighter; }
+
+h2 {
+  color: #F6077D; }
+
+.about-photo img {
+  width: 400px;
+  padding-top: 70px;
+  padding-left: 90px; }
+
+.contac-boton {
+  padding-top: 60px; }
+
+.conteiner h2 {
+  color: #F6077D;
+  margin-top: 137px;
+  margin-left: 137px;
+  font-size: 50px; }
+
+.filtro-list li {
+  list-style: none;
+  float: left;
+  font-size: 30px;
+  color: #F6077D;
+  padding-left: 200px;
+  margin-left: 50px;
+  margin-top: 60px; }
+
+.filtro-list li + li {
+  margin-left: 20px; }
+
+.projects-1 div {
+  width: 230px;
+  height: 230px;
+  background-color: #3908CC;
+  float: left;
+  margin-left: 30px;
+  margin-top: 80px;
+  text-align: center; }
+
+.projects-1 {
+  padding-left: 185px;
+  margin-top: 67px; }
+
+.projects-2 {
+  padding-left: 185px;
+  margin-top: 40px; }
+
+.projects-2 div {
+  width: 230px;
+  height: 230px;
+  background-color: #E6454C;
+  float: left;
+  margin-left: 30px;
+  margin-top: 80px;
+  text-align: center; }
+
 .glitch {
   font-size: 4em;
   font-family: 'Raleway', sans-serif;
@@ -409,3 +473,17 @@ ul {
     transform: translate(5px, -5px); }
   to {
     transform: translate(0); } }
+
+.contac-boton a {
+  background: #181818;
+  border: 5px solid #FA419C;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  color: #fff;
+  margin-left: 110px;
+  padding: 10px 20px; }
