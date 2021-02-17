@@ -1,6 +1,6 @@
-/*body{
-
+body{
   margin: 0;
+  background-color: #1D1D1D;
 }
 
 ul{
@@ -8,22 +8,20 @@ ul{
   padding: 0;
 }
 
+
 .menu-bar{
-  background-color: #be3c3c;
-  width: 91px;
+  background-color: #181818;
+  width: 79px;
   height: 100%;
+  display: inline-block;
+  float: left;
 }
 
-p{
-  margin: 0;
-}
 
 .conteiner{
-  background-color: #1D1D1D;
-  height: 100%;
+  display: inline-block;
 
 }
-
 
 .nav-bar-icon li{
   padding-left: 25px;
@@ -38,4 +36,25 @@ p{
 .logo img{
   padding-bottom: 78px;
 }
-*/
+
+.home-text{
+  margin-left: 169px;
+  padding-top: 200px;
+  float: left;
+}
+.home-text h1, p{
+  color: #fff;
+}
+
+.home-text h1 span{
+  color: #FA419C;
+}
+
+.home-gift{
+  float: right;
+  padding-top: 150px;
+}
+
+.glitch-name{
+  padding-top: 560px;
+}
