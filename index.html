@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <title>Portafolio</title>
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <div class=" wrapper clearfix">
+    <div class="wrapper">
       <div class="menu-bar">
         <div class="menu-bar-icon">
           <a class="logo" href="#">
@@ -17,39 +19,115 @@
         <div class="nav">
           <div class="nav-bar">
             <ul class="nav-bar-icon">
-              <li><a rel="" href="index.html"><img src="./img/home.png"    alt="home"></a></li>
-              <li><a rel="" href="about_me.html"><img src="./img/diamond.png" alt="diamond"></a></li>
-              <li><a rel="" href="mywork.html"><img src="./img/pencil.png"  alt="pencil"></a></li>
-              <li><a rel="" href="mywork-github.html"><img src="./img/pencil.png"  alt="pencil"></a></li>
-              <li><a rel="" href="Conctac_me.html"><img src="./img/map.png"     alt="map"></a></li>
-              <li><a rel="" href="agradecimientos.html"><img src="./img/love.png"     alt="heart"></a></li>
+              <li><a rel="" href="index.html"><img src="img/Home.svg" alt="Home"></a></li>
+              <li><a rel="" href="about_me.html"><img src="img/Diamond.svg" alt="Home"></a></li>
+              <li><a rel="" href="mywork.html"><img src="img/Pen.svg" alt="Home"></a></li>
+              <li><a rel="" href="mywork-github.html"><img src="img/Pin.svg" alt="Home"></a></li>
+              <li><a rel="" href="Conctac_me.html"><img src="img/Contact.svg" alt="Home"></a></li>
+              <li><a rel="" href="agradecimientos.html"><img src="img/Heart.svg" alt="Home"></a></li>
             </ul>
           </div>
         </div>
-        <div class="social-media">
-          <ul class="nav-bar-social">
-            <li><a href="#"><img src="./img/facebook.png" alt="facebook"></li></a>
-            <li><a href="#"><img src="./img/instagram.png" alt="instagram"></li></a>
-            <li><a href="#"><img src="./img/github.png" alt="github"></a></li>
-            <li><a href="#"><img src="./img/linkedin.png" alt="linkedin"></a></li>
-            <li><a href="#"><img src="./img/behance.png" alt="behance"></a></li>
-          </ul>
-        </div>
       </div>
-      <div class="conteiner">
+      <div class="conteiner margin-div">
         <div class="home-text">
           <h1>
             Hello,</br>
-            My name is <span>Marie</span>,</br>
+            My name is</br><b class="glitch" data-glitch="Marie"> Marie</b></br>
             I'm Web Developer
           </h1>
           <p>Front End Developer and Software Engeenier</p>
         </div>
-        <div class="glitch-name">
-          <a href="#" class="glitch" data-glitch="Marie">Marie</a>
+      <div class="about">
+        <div class="about-info">
+          <h2>About me</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and</br>
+            typesetting industry.Lorem Ipsum has been the</br>industry's standard dummy text ever since the 1500s,</br>
+            when an unknown printer took a galley of type and</br> scrambled it to make a type specimen book
+            It has</br> survived not only five centuries, but also the leap into</br> electronic.
+          </p>
+          <div class="contac-boton">
+            <a href="#">Contac me!</a>
+          </div>
+        </div>
+        <div class="about-photo">
+          <img src="./img/marie.jpg">
         </div>
       </div>
+      <div class="work">
+        <h2 class="title">My Work</h2>
+        <div class="my-work clearfix">
+          <ul class="filtro-list">
+            <li>All</li>
+            <li>Javascript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Creative Coding</li>
+          </ul>
+        </div>
+        <div class="projects-1">
+          <div class="box"><img src="./img/dibujo.jpg" alt="Dibujo"></div>
+          <div class="box"><img src="./img/dibujo.jpg" alt="Dibujo"></div>
+          <div class="box"><img src="./img/dibujo.jpg" alt="Dibujo"></div>
+          <div class="box"><img src="./img/dibujo.jpg" alt="Dibujo"></div>
+        </div>
+        <div class="projects-1">
+          <div class="box"><img src="./img/Dibujo-2.jpg" alt="Dibujo"></div>
+          <div class="box"><img src="./img/Dibujo-2.jpg" alt="Dibujo"></div>
+          <div class="box"><img src="./img/Dibujo-2.jpg" alt="Dibujo"></div>
+          <div class="box"><img src="./img/Dibujo-2.jpg" alt="Dibujo"></div>
+        </div>
+      </div>
+      <!--<div class="contac-me">
+        <h2>Conctac me!</h2>
+        <form>
+            <input  type="text"    name="nombre"   value="" required placeholder="Name">
+            <input  type="email"   name="correo"   value="" required placeholder="Email">
+            <input  type="text"    name="asunto"   value="" required placeholder="Subject">
+            <textarea type="text"  name="mensaje" value="" required placeholder="Message"></textarea>
+            <button id="enviar" type="submit">Send</button>
+        </form>
+        <div class="map">
+          <img src="img/mapa.png">
+        </div>
+      </div>-->
+      <div class="thanks">
+        <h2 class="title">Agradecimientos</h2>
+        <div class="people">
+          <div class="people-list">
+            <ul class="firts-list">
+              <li><a href="#">Paula</a></li>
+              <li><a href="#">Vieyra</a></li>
+              <li><a href="#">Karen</a></li>
+              <li><a href="#">José Daniel</a></li>
+              <li><a href="#">Jean Carlos</a></li>
+              <li><a href="#">Stephanie</a></li>
+              <li><a href="#">Jeampaul</a></li>
+              <li><a href="#">Esteban</a></li>
+              <li><a href="#">Kendoll</a></li>
+              <li><a href="#">Jeareth</a></li>
+              <li><a href="#">Daniela</a></li>
+              <li><a href="#">Natalia</a></li>
+              <li><a href="#">Gabriel</a></li>
+              <li><a href="#">Erika</a></li>
+              <li><a href="#">Justin</a></li>
+              <li><a href="#">Ignacio</a></li>
+              <li><a href="#">Alexa</a></li>
+              <li><a href="#">Alonso</a></li>
+              <li><a href="#">Fabian</a></li>
+              <li><a href="#">Rebekka</a></li>
+              <li><a href="#">Jeremy</a></li>
+              <li><a href="#">Nadeska</a></li>
+              <li><a href="#">Tamara</a></li>
+              <li><a href="#">Abyssh</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
     </div>
     <script src="js/script.js"></script>
   </body>
-</html
+</html>

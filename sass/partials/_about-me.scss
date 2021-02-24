@@ -1,23 +1,32 @@
+.about{
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+
 .about-info{
-  margin-left: 110px;
-  padding-top: 200px;
+  margin-left: 169px;
   float: left;
 }
 
 p{
   font-size: 24px;
-  font-weight: lighter;
+  font-weight: 200;
 }
 
 h2{
-  color:#F6077D;
+  color:#DA8AF0;
+  text-align: left;
+  font-size: 50px;
+  margin-bottom: 45px;
 }
 
 .about-photo img{
-  width: 400px;
-  padding-top: 190px;
-  padding-left: 90px;
+  width: 350px;
+  padding-left: 250px;
 }
+
+
 
 
 .contac-boton {

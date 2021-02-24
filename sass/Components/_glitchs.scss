@@ -1,19 +1,5 @@
 
 .glitch {
-	font: {
-		size: 4em;
-		family: 'Raleway', sans-serif;
-		weight: 700;
-	}
-	text-decoration: none;
-	text-transform: uppercase;
-	position: absolute;
-	top: 55%;
-	left: 79%;
-	transform: translate(-50%, -50%);
-	margin: 0;
-	color: #fff;
-	letter-spacing: 5px;
 
 	&:before, &:after {
 		display: block;
@@ -26,13 +12,17 @@
 		width: 100%;
 		opacity: .8;
 	} &:after {
-		color: #f0f;
+		color: #fa419d;
 		z-index: -2;
 	} &:before {
-		color: #0ff;
+		color: #3908cc;
 		z-index: -1;
 	}
+
 	&:hover {
+    .glitch{
+      color:#fa419da4;
+    }
 		&:before {
 			animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both 5
 		}

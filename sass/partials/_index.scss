@@ -1,60 +1,54 @@
 body{
-  margin: 0;
   background-color: #1D1D1D;
 }
 
-ul{
-  margin: 0;
-  padding: 0;
-}
-
-
 .menu-bar{
+  position: fixed;
   background-color: #181818;
-  width: 79px;
+  width: 70px;
   height: 100%;
-  display: inline-block;
-  float: left;
+  z-index: 1;
 }
 
 
-.conteiner{
-  display: inline-block;
-
-}
 
 .nav-bar-icon li{
-  padding-left: 25px;
-  padding-bottom: 78px;
+  padding-bottom: 80px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
 }
 
-.nav-bar-social li{
-  padding-left: 25px;
-  padding-bottom: 35px;
-}
 
 .logo img{
-  padding-bottom: 78px;
+  padding-bottom: 95px;
+  padding-left: 15px ;
+  padding-top: 10px;
 }
 
 .home-text{
   margin-left: 169px;
-  padding-top: 200px;
-  float: left;
+  padding-top: 60px;
+  font-size: 45px;
 }
 .home-text h1, p{
   color: #fff;
 }
 
-.home-text h1 span{
-  color: #FA419C;
+.glitch{
+  color:#DA8AF0;
+	font-size: 100px;
+	font-family:'Noto Sans SC', sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: absolute;
+	letter-spacing: 5px;
 }
 
 .home-gift{
-  float: right;
   padding-top: 150px;
 }
 
-.glitch-name{
-  padding-top: 560px;
-}
+
+
