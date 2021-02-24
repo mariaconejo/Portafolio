@@ -7,8 +7,8 @@
 
 .box{
   flex-basis: 400px;
-  color:white;
-  border: 2px solid #8A1CBD;
+  color:$paragraph;
+  border: 2px solid $border;
 }
 
 .box img{

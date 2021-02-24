@@ -333,7 +333,7 @@ body {
 
 .nav-bar-icon li {
   padding-bottom: 80px;
-  color: white;
+  color: #fff;
   font-size: 16px;
   text-align: center; }
 
@@ -353,7 +353,7 @@ body {
 .glitch {
   color: #DA8AF0;
   font-size: 100px;
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
@@ -440,9 +440,6 @@ h2 {
   color: #3908cc;
   z-index: -1; }
 
-.glitch:hover .glitch {
-  color: #fa419da4; }
-
 .glitch:hover:before {
   animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 5; }
 
@@ -468,7 +465,7 @@ h2 {
     transform: translate(0); } }
 
 .contac-boton a {
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
   background: #DA8AF0;
   box-sizing: border-box;
   text-decoration: none;
@@ -488,7 +485,7 @@ h2 {
 
 .box {
   flex-basis: 400px;
-  color: white;
+  color: #fff;
   border: 2px solid #8A1CBD; }
 
 .box img {

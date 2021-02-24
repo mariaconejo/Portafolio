@@ -1,12 +1,12 @@
 .contac-boton a{
-  font-family: 'Noto Sans SC', sans-serif;
-  background: #DA8AF0;
+  font-family: $font-family;
+  background: $violet-title;
   box-sizing: border-box;
   text-decoration: none;
   font-weight: bold;
   font-size: 36px;
   line-height: 43px;
-  color:#181818;
+  color:$menu-background;
   margin-left: 0px;
   padding: 10px 20px;
   box-sizing: border-box;
