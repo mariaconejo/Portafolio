@@ -1,14 +1,62 @@
-.contac-boton a{
-  font-family: $font-family;
-  background: $violet-title;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 43px;
-  color:$menu-background;
-  margin-left: 0px;
-  padding: 10px 20px;
-  box-sizing: border-box;
-  border-radius: 9px;
+.btn-link {
+    display: inline-block;
+    color: $button;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+&:before,
+&:after {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;  
+}
+
+&:before {
+    background-color: $glitch-color-1;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+&:after {
+    background-color: $glitch-color-2;
+    border-radius: 5px;
+    z-index: -2;
+}
+
+&:hover {
+
+    &:before {
+        animation: glitchy 0.3s ease 0.3s infinite;
+    }
+    
+    &:after {
+        animation: glitchy 0.3s ease infinite reverse;
+    }
+}   
+}
+
+.link-inner {
+    background-color: $paragraph;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: block;
+    padding: 10px 15px;
+}
+
+#send{
+    background: $paragraph;
+    border-radius: 5px;
+    border: none;
+    color:$button;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 143px;
+    margin-right:420px;
+    padding: 10px 15px;
 }
