@@ -1,10 +1,9 @@
 
-.glitch {
+.glitch{
 
 	&:before, &:after {
 		display: block;
 		content: attr(data-glitch);
-		text-transform: uppercase;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -55,4 +54,73 @@
 	to {
 		transform: translate(0)
 	}
+}
+
+.line-link {
+    position: relative;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+    z-index: 1;
+    border-bottom: 5px solid fade(#fff, 85%);
+    padding-bottom: 3px;
+    
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        visibility: hidden;
+    }
+    
+    &:before {
+        background-color: $glitch-color-1;
+        z-index: -1;
+    }
+
+    &:after {
+        background-color: $glitch-color-2;
+        z-index: -2;
+    }
+    
+    &:hover {
+        &:before {
+            visibility: visible;
+            animation: line-glitchy 0.3s ease 0.3s infinite;
+        }
+        
+        &:after {
+            visibility: visible;
+            animation: line-glitchy 0.3s ease infinite reverse;
+        }
+    }
+}
+
+@keyframes glitchy {
+    0%   {transform: translate(-2px, 2px);}
+    25%  {transform: translate(-2px, -2px);}
+    50%  {transform: translate(2px, 2px);}
+    75%  {transform: translate(2px, -2px);}
+    100%  {transform: translate(-2px, 2px);}
+}
+
+
+@keyframes line-glitchy {
+    0%   {transform: translate(-1px, 1px);}
+    25%  {transform: translate(-1px, -1px);}
+    50%  {transform: translate(1px, 1px);}
+    75%  {transform: translate(1px, -1px);}
+    100%  {transform: translate(-1px, 1px);}
+}
+
+
+
+
+.icon-nav:hover,
+.icon-nav:focus {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }

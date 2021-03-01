@@ -1,0 +1,36 @@
+.contac-me{
+    margin-bottom: 150px;
+}
+
+.form{
+    float: left;
+    width: 572px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+
+}
+
+
+.map img{
+    max-width: 100%;
+    width: 608px;
+
+
+}
+
+label{
+    color: $paragraph;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+input, textarea{
+    background-color: transparent;
+    border: none;
+    border-bottom:2px solid $violet-title;
+    margin-bottom: 20px;
+}
+
