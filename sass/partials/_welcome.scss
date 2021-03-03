@@ -1,6 +1,8 @@
 .welcome-text{
   font-size: 45px;
   padding-top: 60px;
+  //width: 300px;
+  
 
   h1, p{
     color: $paragraph;
@@ -9,6 +11,7 @@
 
   p{
     font-size: 26px;
+    padding: 0;
   }
 }
 
@@ -21,7 +24,10 @@
 	letter-spacing: 5px;
 }
 
-
+.about-info-text{
+  width: 661px;
+  margin-right: 43px;
+}
 
 *, *:before, *:after {
   box-sizing: inherit;
