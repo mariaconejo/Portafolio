@@ -1,12 +1,15 @@
-# Plantilla de proyectos para el curso de Javascript 2 en el [CETAV](http://parquelalibertad.org/cetav/)
+# Plantilla del Portafolio
 
-## Requerimientos
+## Feedback
 
-* Node.js 12.x o superior
+    Espacios entre elementos
 
-## Uso
+    Eliminar carpeta de breakpoints 
 
-```
-npm install
-npm run dev
-```
+    ELiminar el / de los titulos 
+
+    Eliminar los br para salto de línea
+
+    Más espaciado entre oraciones 
+
+

@@ -38,11 +38,12 @@
 }
 
 .code-list li{
-  background-color: $glitch-color-1;
+  background-color: $button;
   box-sizing: border-box;
   color:$paragraph;
   flex-basis: 500px;
-  height: 200px;
+  height: 100px;
+  margin-bottom: 34px;
   list-style: none;
 }
 

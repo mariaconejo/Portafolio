@@ -1,14 +1,16 @@
 @import"./config/normalize";
-@import"./config/variables";
+@import"./config/settings";
 @import"./config/global";
 @import"./partials/welcome";
 @import"./partials/about-me";
 @import"./partials/my-work";
+@import"./partials/mobile";
 @import"./components/buttons";
 @import"./components/boxes";
 @import"./components/menu";
 @import"./components/form";
 @import"./components/table";
+@import"./components/slider";
 @import"./animations/glitchs";
 
 
