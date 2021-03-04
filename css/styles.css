@@ -327,7 +327,7 @@ ul {
 .titles {
   color: #DA8AF0;
   font-size: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   text-align: left; }
 
 .welcome-text {
@@ -386,14 +386,56 @@ ul {
   color: #fff;
   font-size: 20px; }
 
-.code {
-  overflow-y: scroll;
-  width: 1180px; }
-
 ::-webkit-scrollbar {
   display: none; }
 
-@im @import"./components/buttons";
+.btn-link {
+  display: inline-block;
+  color: #8A1CBD;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  position: relative;
+  text-decoration: none;
+  z-index: 1; }
+  .btn-link:before, .btn-link:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0; }
+  .btn-link:before {
+    background-color: #FA419C;
+    border-radius: 5px;
+    z-index: -1; }
+  .btn-link:after {
+    background-color: #3908cc;
+    border-radius: 5px;
+    z-index: -2; }
+  .btn-link:hover:before {
+    animation: glitchy 0.3s ease 0.3s infinite; }
+  .btn-link:hover:after {
+    animation: glitchy 0.3s ease infinite reverse; }
+
+.link-inner {
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: block;
+  padding: 10px 15px; }
+
+#send {
+  background: #fff;
+  border-radius: 5px;
+  border: none;
+  color: #8A1CBD;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 143px;
+  margin-right: 420px;
+  padding: 10px 15px; }
+
 .my-work ul {
   display: flex;
   justify-content: space-between; }
@@ -703,8 +745,7 @@ td {
   width: 300px;
   border: 3px solid #8A1CBD;
   padding: 15px;
-  margin: 45px;
-  box-shadow: 10px -10px 0 -3px #1D1D1D, 10px -10px #3908cc, 20px -20px 0 -3px #1D1D1D, 20px -20px #FA419C, 30px -30px 0 -3px #1D1D1D, 30px -30px #DA8AF0, 40px -40px 0 -3px #1D1D1D, 40px -40px #fff;
+  box-shadow: 10px -10px 0 -3px #1D1D1D, 10px -10px #3908cc, 20px -20px 0 -3px #1D1D1D, 20px -20px #FA419C, 30px -30px 0 -3px #1D1D1D, 30px -30px #DA8AF0;
   transition: box-shadow 1s, top 1s, left 1s;
   position: relative;
   top: 0;
@@ -714,4 +755,4 @@ td {
 .card:hover {
   top: -40px;
   left: 40px;
-  box-shadow: 0 0 0 -3px #1D1D1D, 0 0 0 0 #3908cc, 0 0 0 -3px #1D1D1D, 0 0 0 0 #FA419C, 0 0 0 -3px #1D1D1D, 0 0 0 0 #DA8AF0, 0 0 0 -3px #1D1D1D, 0 0 0 0 #fff; }
+  box-shadow: 0 0 0 -3px #1D1D1D, 0 0 0 0 #3908cc, 0 0 0 -3px #1D1D1D, 0 0 0 0 #FA419C, 0 0 0 -3px #1D1D1D, 0 0 0 0 #DA8AF0; }

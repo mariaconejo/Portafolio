@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Portafolio</title> 
+    <link rel="stylesheet" href="public/css/styles.css">
+    <title>Portafolio</title>
   </head>
   <body>
     <!--AQUI COMIENZA EL MENÚ-->
@@ -21,12 +21,12 @@
       <div class="nav">
         <div class="nav-bar">
           <ul class="nav-bar-icon">
-            <li><a rel="" href="index.html"><img src="img/Home.svg" alt="Home" class="icon-nav"></a></li>
-            <li><a rel="" href="about_me.html"><img src="img/Diamond.svg" alt="Home" class="icon-nav"></a></li>
-            <li><a rel="" href="mywork.html"><img src="img/Pen.svg" alt="Home" class="icon-nav"></a></li>
-            <li><a rel="" href="mywork-github.html"><img src="img/Pin.svg" alt="Home" class="icon-nav"></a></li>
-            <li><a rel="" href="Conctac_me.html"><img src="img/Contact.svg" alt="Home" class="icon-nav"></a></li>
-            <li><a rel="" href="agradecimientos.html"><img src="img/Heart.svg" alt="Home" class="icon-nav"></a></li>
+            <li><a rel="" href="#welcome"><img src="img/Home.svg" alt="Home" class="icon-nav"></a></li>
+            <li><a rel="" href="#about-me"><img src="img/Diamond.svg" alt="Home" class="icon-nav"></a></li>
+            <li><a rel="" href="#my-work"><img src="img/Pen.svg" alt="Home" class="icon-nav"></a></li>
+            <li><a rel="" href="#github"><img src="img/Pin.svg" alt="Home" class="icon-nav"></a></li>
+            <li><a rel="" href="#contac-me"><img src="img/Contact.svg" alt="Home" class="icon-nav"></a></li>
+            <li><a rel="" href="#thanks"><img src="img/Heart.svg" alt="Home" class="icon-nav"></a></li>
           </ul>
         </div>
       </div>
@@ -37,7 +37,7 @@
       <!--AQUI COMIENZA EL CONTEINER SECUNDARIO-->
       <div class="second-conteiner">
         <!--AQUI COMIENZA EL WELCOME -->
-        <div class="welcome">
+        <div class="welcome" id="welcome">
           <div class="welcome-text">
             <h1>
               Hello,</br>
@@ -49,13 +49,13 @@
         </div>
         <!--AQUI TERMINA EL WELCOME-->
         <!--AQUI COMIENZA EL ABOUT ME-->
-        <div class="about clearfix">
+        <div class="about clearfix" id="about-me">
           <div class="about-info">
             <h2 class="titles">&ltAbout me&gt</h2>
             <p class="about-info-text">
               Lorem Ipsum is simply dummy text of the printing and
               typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and it to make a type specimen book It has 
+              when an unknown printer took a galley of type and it to make a type specimen book It has
               survived not only five centuries, but also the leap into
               electronic.
             </p>
@@ -69,7 +69,7 @@
         </div>
         <!--AQUI TERMINA EL ABOUT ME-->
         <!--AQUI COMIENZA MY WORK-->
-        <div class="work">
+        <div class="work" id="my-work">
           <h2 class="titles">&ltMy Work&gt</h2>
           <div class="my-work">
             <ul class="filtro-list">
@@ -93,7 +93,7 @@
         </div>
         <!--AQUI TERMINA MY WORK-->
         <!--AQUI COMIENZA GIT HUB-->
-        <div class="github">
+        <div class="github" id="github">
           <h2 class="titles">&ltGitHub:mariaconejo&gt</h2>
           <div class="code">
             <ul class="code-list">
@@ -103,7 +103,7 @@
         </div>
         <!--AQUI TERMINA GIT-HUB-->
         <!--AQUI COMIENZA EL BLOG-->
-        <div class="blog">
+        <div class="blog" id="blog">
           <h2 class="titles">&ltBlog&gt</h2>
           <div class="articles">
             <ul class="articles-list">
@@ -113,18 +113,18 @@
             </ul>
           </div>
         </div>
-        
+
         <!--AQUI TERMINA EL BLOG-->
         <!--AQUI COMIENZA GALLERY-->
-        <div class="slider">
+        <div class="slider" id="gallery">
           <h2 class="titles">&ltMy Art&gt</h2>
           <div class="carousel">
             <img name="slide1" width ="700px" height="700px"/>
           </div>
-            
+
         </div>
         <!--AQUI COMIENZA EL CONTACME-->
-        <div class="contac-me clearfix">
+        <div class="contac-me clearfix" id="contac-me">
           <h2 class="titles">&ltConctac me&gt</h2>
           <div class="form">
             <form>
@@ -144,7 +144,7 @@
           </div>
       </div>
       <!--AQUI COMIENZA LOS AGRADECIMIENTOS-->
-      <div class="thanks">
+      <div class="thanks" id="thanks">
         <h2 class="titles">&ltThanks&gt</h2>
         <div class="people">
           <table class="people-list">
@@ -187,6 +187,6 @@
       </div>
     </div>
     <script src="/js/script.js"></script>
-    
+
   </body>
 </html>

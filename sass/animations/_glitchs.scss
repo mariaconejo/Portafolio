@@ -135,11 +135,10 @@
     width: 300px;
     border: 3px solid $button;
     padding: 15px;
-    margin: 45px;
     box-shadow: 10px -10px 0 -3px $wrapper-background, 10px -10px $glitch-color-2,
         20px -20px 0 -3px $wrapper-background, 20px -20px $glitch-color-1, 
-        30px -30px 0 -3px $wrapper-background, 30px -30px $violet-title, 
-        40px -40px 0 -3px $wrapper-background, 40px -40px $paragraph; 
+        30px -30px 0 -3px $wrapper-background, 30px -30px $violet-title;
+        
     transition: box-shadow 1s, top 1s, left 1s;
     position: relative;
     top: 0;
@@ -152,8 +151,7 @@ top: -40px;
 left: 40px;
 box-shadow: 0 0 0 -3px $wrapper-background, 0 0 0 0 $glitch-color-2,
     0 0 0 -3px $wrapper-background, 0 0 0 0  $glitch-color-1,
-    0 0 0 -3px $wrapper-background, 0 0 0 0  $violet-title,
-    0 0 0 -3px $wrapper-background, 0 0 0 0  $paragraph;
+    0 0 0 -3px $wrapper-background, 0 0 0 0  $violet-title;
 }
 
 
