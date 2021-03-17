@@ -1,0 +1,48 @@
+// switch
+html.dark-mode{
+  filter: invert(100%);
+}
+.switch input {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+input:checked + .slider {
+  background-color: $title-principal-color;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px $title-principal-color;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.switch {
+  display: inline-block;
+  height: 15px;
+  left: 1180px;
+  position: relative;
+  top:45px;
+  width: 60px;
+}
+.slider {
+  bottom: 0;
+  background-color:$title-principal-color;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+.slider:before {
+  bottom: 4px;
+  background-color: $paragraph-color;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+

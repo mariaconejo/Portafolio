@@ -1,37 +1,31 @@
+// Globales
 html{
+  font-family:$font-principal;
   margin: 0;
   padding: 0;
-  font-family:$font;
 }
-
+body{
+  background-color: $backgroud-body;
+}
 ul{
-
   margin: 0;
   padding: 0;
-
 }
-
-.principal-conteiner{
-  margin-left: 70px;
-  
+.principal__conteiner{
+  margin-left: 100px;
 }
-
-.second-conteiner{
+.second__conteiner{
   margin: 0 auto;
   width: 1180px;
-
-  
 }
-
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
-
 .titles{
-  color: $violet-title;
-  font-size: 50px;
+  color: $title-principal-color;
+  font-size: $subtitle-size;
   margin-bottom: 100px;
   text-align: left;
 }

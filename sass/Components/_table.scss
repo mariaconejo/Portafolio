@@ -1,18 +1,15 @@
-
-.thanks{
-  margin-bottom: 150px;
-
-}
-
 td{
   line-height: 50px;
   padding: 0;
-  text-align: center;
+  text-align: left;
   width: 250px;
 }
-
-.people-list td a{
+.people__list td a{
   text-decoration: none;
-  color: $paragraph;
-  font-size: 16px;
+  color: $paragraph-color;
+  font-size: $font-size-link;
 }
+.people{
+  padding-top: 99px;
+}
+

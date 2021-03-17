@@ -1,28 +1,23 @@
-body{
-    background-color: $wrapper-background;
+// Menu
+.menu__bar{
+  background-color:$backgroud-menu;
+  height: 100%;
+  position: fixed;
+  width: 90px;
+  z-index: 1;
 }
-
-.menu-bar{
-    position: fixed;
-    background-color: $menu-background;
-    width: 70px;
-    height: 100%;
-    z-index: 1;
+.nav__bar--icon li{
+  color: $paragraph-color;
+  padding-bottom: 57px;
+  list-style: none;
+  text-align: center;
 }
-
-.nav-bar-icon li{
-padding-bottom: 80px;
-color: $paragraph;
-font-size: 16px;
-text-align: center;
-list-style: none;
+.menu__bar--logo img{
+  padding-bottom: 30px;
+  padding-left: 20px ;
+  padding-top: 10px;
 }
-
-
-.logo img{
-padding-bottom: 95px;
-padding-left: 15px ;
-padding-top: 10px;
+.icon__nav:hover, .icon__nav:focus {
+  filter: $filtro;
 }
-
 

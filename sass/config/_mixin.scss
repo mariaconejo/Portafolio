@@ -1,0 +1,10 @@
+// Mixins
+@mixin decoration {
+  font-family: $font-decoration;
+  font-size: $paragraph-size;
+  color: $font-decoration-color;
+  font-style: italic;
+  font-weight: bold;
+}
+
+

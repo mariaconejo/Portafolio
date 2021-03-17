@@ -1,70 +1,70 @@
-.my-work ul{
+// cajas del filtro
+.works__conteiner--proyects img{
+  width: 100%;
+  height: 100%;
+}
+.categorie p{
+  background-color: $glitch-color-two;
+  color: $paragraph-color;
+  margin: 0;
+  padding: 15px 10px;
+}
+.categorie{
+  cursor: pointer;
+  flex-basis: 200px;
+  font-size: $paragraph-size;
+  text-align: center;
+}
+.categorie.active {
+	border: 2px solid $paragraph-color;
+	color: $glitch-color-two;
+}
+.works__conteiner{
+  display: none;
+  padding-top: 80px;
+}
+.works__conteiner.activo{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
-
-.filtro-list{
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  list-style: none;
-}
-
-.projects ul{
-  display: flex;
-  flex-wrap: wrap;
-  height: 625px;
-  justify-content: space-between;
-}
-
-.projects-list li{
-  background-color: $button;
+.works__conteiner--proyects{
+  background-color: $backgroud-body;
+  box-shadow: 10px 10px 0px 10px $font-color-button;
   box-sizing: border-box;
-  color:$paragraph;
-  flex-basis: 350px;
-  height: 250px;
-  list-style: none;
+  cursor: pointer;
+  padding-bottom: 10px;
+  width: 400px;
 }
-
-
-
+// Cajas de git hub
 .code ul{
   display: flex;
   flex-wrap: wrap;
   height: 625px;
   justify-content: space-between;
-  
-
 }
-
-.code-list li{
-  background-color: $button;
+.code__list li{
+  background-color: $font-color-button;
   box-sizing: border-box;
-  color:$paragraph;
+  color:$paragraph-color;
   flex-basis: 500px;
   height: 100px;
   margin-bottom: 34px;
   list-style: none;
 }
-
 .articles ul{
+  display: flex;
   flex-wrap: wrap;
   height: 625px;
-  display: flex;
   justify-content: space-between;
 }
-
-
 .articles-list li{
+  background-color: $glitch-color-two;
+  box-sizing: border-box;
+  color:$paragraph-color;
   flex-basis: 300px;
   height: 600px;
-  color:$paragraph;
-  background-color: $glitch-color-2;
-  box-sizing: border-box;
   list-style: none;
 }
-
-
 .blog{
-  margin-bottom: 100px;
+  margin-bottom:150px;
 }
