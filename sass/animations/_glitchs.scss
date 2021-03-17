@@ -1,40 +1,107 @@
+// Hover del menu
 
+ul li .text{
+  font-size: 14px;
+  margin-left: 0;
+  margin-top: 5px;
+  overflow: hidden;
+  position:absolute;
+  transition: 1ms;
+  white-space: nowrap;
+  width: 0;
+}
+ul li:hover .text{
+  margin-left: 14px;
+  width: 60px;
+}
+$steps: 50;
+.random__text {
+  animation: cray 6s infinite steps($steps);
+}
+@keyframes cray {
+  @for $i from 1 to $steps {
+    $per: 100% / $steps * $i;
+    $weight: (
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700
+    );
+    $style: (
+      normal,
+      italic,
+      normal,
+      normal
+    );
+    $decor: (
+      none,
+      none,
+      line-through,
+      underline,
+      none,
+      none,
+      none
+    );
+    $trans: (
+      none,
+      none,
+      uppercase,
+      lowercase,
+      capitalize,
+      none,
+      none,
+      none,
+      none,
+      none,
+      none
+    );
+
+    $arrayW: random(7);
+    $arrayS: random(4);
+    $arrayD: random(7);
+    $arrayT: random(11);
+
+    #{$per} {
+      font-weight: nth($weight, $arrayW);
+      font-style: nth($style, $arrayS);
+      text-decoration: nth($decor, $arrayD);
+      text-transform: nth($trans, $arrayT);
+    }
+  }
+}
+// animacion de los titulos
 .glitch{
 
 	&:before, &:after {
-		display: block;
+
 		content: attr(data-glitch);
-		position: absolute;
-		top: 0;
+    display: block;
+    height: 100%;
 		left: 0;
-		height: 100%;
-		width: 100%;
 		opacity: .8;
+    position: absolute;
+    top: 0;
+    width: 100%;
 	} &:after {
-		color: $glitch-color-1;
+		color: $glitch-color-one;
 		z-index: -2;
 	} &:before {
-		color:$glitch-color-2;
+		color:$glitch-color-two;
 		z-index: -1;
 	}
 
-	&:hover {
+	&{
 		&:before {
-			animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both 5
+			animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both 100
 		}
 		&:after {
-			animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both 5
+			animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both 100
 		}
 	}
 }
-
-@media only screen and (max-width: 400px) {
-	.glitch {
-		font-size: 3em;
-	}
-}
-
-
 @keyframes glitch {
 	0% {
 		transform: translate(0)
@@ -55,54 +122,92 @@
 		transform: translate(0)
 	}
 }
+// texto del filtro
+.text__link{
+  display: inline-block;
+  color: $paragraph-color;
+  font-size: 20px;
+  margin-top: 10px;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
 
-.line-link {
-    border-bottom: 5px solid fade($paragraph, 85%);
-    color: $paragraph;
+  &:before,
+  &:after {
+      content:attr(data-content);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+  }
+
+  &:before {
+      color: $glitch-color-one;
+      z-index: -1;
+  }
+
+  &:after {
+      color: $glitch-color-two;
+      z-index: -2;
+  }
+
+  &:hover {
+      &:before {
+          animation: glitchy 0.3s ease 0.3s infinite;
+      }
+
+      &:after {
+          animation: glitchy 0.3s ease infinite reverse;
+      }
+  }
+}
+.line__link {
+    border-bottom: 5px solid fade($paragraph-color, 85%);
+    color: $paragraph-color;
     font-size: 24px;
     font-weight: lighter;
     padding-bottom: 3px;
     position: relative;
     text-decoration: none;
     z-index: 1;
-    
+
     &:before,
     &:after {
         content: '';
-        
+
         bottom: -1px;
         height: 1px;
         left: 0;
         right: 0;
         position: absolute;
         visibility: hidden;
-        
+
     }
-    
+
     &:before {
-        background-color: $glitch-color-1;
+        background-color: $glitch-color-one;
         z-index: -1;
     }
 
     &:after {
-        background-color: $glitch-color-2;
+        background-color: $glitch-color-two;
         z-index: -2;
     }
-    
+
     &:hover {
         &:before {
             animation: line-glitchy 0.3s ease 0.3s infinite;
             visibility: visible;
-            
+
         }
-        
+
         &:after {
             animation: line-glitchy 0.3s ease infinite reverse;
             visibility: visible;
         }
     }
 }
-
 @keyframes glitchy {
     0%   {transform: translate(-2px, 2px);}
     25%  {transform: translate(-2px, -2px);}
@@ -119,40 +224,116 @@
     75%  {transform: translate(1px, -1px);}
     100%  {transform: translate(-1px, 1px);}
 }
+// Border filtro
+.gradient__border {
+  position: relative;
+  color: $paragraph-color;
+  border-radius:3px;
 
-
-
-
-.icon-nav:hover,
-.icon-nav:focus {
-    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  &::after {
+    position: absolute;
+    content: '';
+    top: calc(-1 * 3px);
+    left: calc(-1 * 3px);
+    width: calc(100% + 3px * 2);
+    height: calc(100% + 3px * 2);
+    z-index: -1;
+    background-image: linear-gradient(
+      60deg,
+      hsl(281, 74%, 43%),
+      hsl(330, 95%, 62%),
+      hsl(255, 92%, 42%),
+      hsl(287, 77%, 74%),
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * 3px);
+    animation: moveGradient 4s alternate infinite;
+  }
 }
-
-
-
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+// hover de las umagenes del filtro
+figure {
+  filter: grayscale(1);
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+figure::before {
+  background: $gray-escale;
+	border-radius: 100%;
+  content: '';
+  display: block;
+  height: 0;
+	left: 50%;
+	opacity: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 0;
+  z-index: 2;
+}
+figure:hover{
+  animation: bloom ease-in-out .75s forwards;
+}
+figure:hover::before {
+	animation: circle .75s;
+}
+@keyframes bloom {
+	0% {
+		filter: grayscale(.8);
+	}
+	40% {
+		filter: grayscale(.5);
+	}
+	100% {
+		filter: grayscale(0);
+	}
+}
+@keyframes circle {
+	0% {
+    background: $hover-rgb-1;
+		opacity: .5;
+	}
+	40% {
+    background: $hover-rgb-2;
+		opacity: 1;
+	}
+	100% {
+		height: 200%;
+		opacity: 0;
+    width: 200%;
+	}
+}
+//hover de las cajas de git hub
 .card {
-    display: block;
-    width: 300px;
-    border: 3px solid $button;
-    padding: 15px;
-    box-shadow: 10px -10px 0 -3px $wrapper-background, 10px -10px $glitch-color-2,
-        20px -20px 0 -3px $wrapper-background, 20px -20px $glitch-color-1, 
-        30px -30px 0 -3px $wrapper-background, 30px -30px $violet-title;
-        
-    transition: box-shadow 1s, top 1s, left 1s;
-    position: relative;
-    top: 0;
-    left: 0;
-    cursor: pointer;
+  border: 3px solid $font-color-button;
+  box-shadow: 10px -10px 0 -3px $backgroud-body, 10px -10px $glitch-color-two,
+      20px -20px 0 -3px $backgroud-body, 20px -20px $glitch-color-one,
+      30px -30px 0 -3px $backgroud-body, 30px -30px $title-principal-color;
+  cursor: pointer;
+  display: block;
+  left: 0;
+  padding: 15px;
+  position: relative;
+  transition: box-shadow 1s, top 1s, left 1s;
+  top: 0;
+  width: 300px;
+}
+.card:hover {
+  box-shadow: 0 0 0 -3px $backgroud-body, 0 0 0 0 $glitch-color-two,
+      0 0 0 -3px $backgroud-body, 0 0 0 0  $glitch-color-one,
+      0 0 0 -3px $backgroud-body, 0 0 0 0  $title-principal-color;
+  left: 40px;
+  top: -40px;
 }
 
-.card:hover {
-top: -40px;
-left: 40px;
-box-shadow: 0 0 0 -3px $wrapper-background, 0 0 0 0 $glitch-color-2,
-    0 0 0 -3px $wrapper-background, 0 0 0 0  $glitch-color-1,
-    0 0 0 -3px $wrapper-background, 0 0 0 0  $violet-title;
-}
+
+
 
 
 

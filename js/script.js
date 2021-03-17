@@ -1,9 +1,9 @@
 const apiUrl = 'https://api.github.com/users/mariaconejo/repos?per_page=6';
-const list = document.querySelector('.code-list');
+const list = document.querySelector('.code__list');
 const repoList = (element) => {
   element.forEach((repo) => {
     const repositorios = `
-    <li class="card"><a class="link-repo" href="${repo.html_url}" target "_blank">${repo.name}</a>
+    <li class="card"><a class="link__repo" href="${repo.html_url}" target "_blank">${repo.name}</a>
         <p>Create:${repo.created_at}</p>
     </li>
     `;
@@ -20,19 +20,70 @@ fetch(apiUrl, {
   })
   .catch((err) => console.error(err));
 
-let i = 0;
-const images = ['./img/dibujo.jpg', './img/dibujo-2.png', './img/dibujo-3.jpg', './img/dibujo-4.png', './img/dibujo-5.png', './img/dibujo-6.jpg', './img/dibujo-7.jpg', './img/dibujo.jpg', './img/dibujo-8.jpg', './img/dibujo-9.png', './img/dibujo-10.jpg'];
+// Filtro
 
-const time = 3000;
+const categorias = document.querySelectorAll('#categories .categorie');
+const contenedorTrabajos = document.querySelectorAll('.works__conteiner');
+let categoriaActiva = null;
 
-function changePic() {
-  document.slide1.src = images[i];
-  if (i < images.length - 1) {
-    i++;
-  } else {
-    i = 0;
-  }
-  setTimeout(changePic(), time);
+categorias.forEach((categoria) => {
+  categoria.addEventListener('click', (e) => {
+    categorias.forEach((elemento) => {
+      elemento.classList.remove('active');
+    });
+    e.currentTarget.classList.toggle('active');
+    categoriaActiva = categoria.dataset.categoria;
+    contenedorTrabajos.forEach((contenedor) => {
+      if (contenedor.dataset.categoria === categoriaActiva) {
+        contenedor.classList.add('activo');
+      } else {
+        contenedor.classList.remove('activo');
+      }
+    });
+  });
+});
+
+// Galeria
+const elements = document.getElementsByClassName('column');
+
+for (let i = 0; i < elements.length; i++) {
+  elements[i].style.flex = '25%';
 }
 
-window.onload = changePic;
+// Formulario
+
+const form = document.querySelector('form');
+const input = document.querySelectorAll('.required');
+const h3 = document.querySelector('h3');
+const msj = document.querySelector('form p');
+let alertError = '';
+let alertValido = '';
+msj.innerHTML = '';
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  input.forEach((element) => {
+    if (element.value === '') {
+      element.classList.add('js__warning');
+      alertError = 'Ocurrio un error,por favor llenar los campos resaltados';
+      alertValido = '';
+      h3.innerHTML = alertError;
+    } else {
+      element.classList.remove('js__warning');
+      alertError = '';
+      alertValido = 'Su formulario fue enviado';
+      msj.innerHTML = alertValido;
+      msj.classList.add('js__validation');
+    }
+  });
+  event.target.reset();
+});
+
+// Switch
+
+const ligthMode = document.querySelector('input');
+
+ligthMode.addEventListener('click', (e) => {
+  e.preventDefault();
+  document.documentElement.classList.toggle('dark-mode');
+});

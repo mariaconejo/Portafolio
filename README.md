@@ -12,4 +12,6 @@
 
     Más espaciado entre oraciones 
 
+    Agregar decoración
+
 

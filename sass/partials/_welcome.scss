@@ -1,36 +1,23 @@
-.welcome-text{
-  font-size: 45px;
+// welcome
+.welcome__text{
+  font-size: $title-principal-size;
+  margin-top: 0;
   padding-top: 60px;
-  //width: 300px;
-  
-
   h1, p{
-    color: $paragraph;
-    
+    color: $paragraph-color;
+    margin-bottom: 0;
   }
-
   p{
-    font-size: 26px;
+    margin: 0;
     padding: 0;
   }
 }
-
 .glitch{
-	color:$violet-title;
-	font-size: 100px;
-	font-weight: 700;
+	color:$title-principal-color;
+  position: absolute;
 	text-decoration: none;
-	position: absolute;
-	letter-spacing: 5px;
 }
 
-.about-info-text{
-  width: 661px;
-  margin-right: 43px;
-}
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
 
 

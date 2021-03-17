@@ -1,26 +1,24 @@
-.about{
-  margin-top: 150px;
-}
-
-
-.about-info{
-  float: left;
-}
-
-.about-info-text{
-  color: #fff;
-  font-size: 18px;
-  letter-spacing: 1px;
-  line-height: 41px;
-  margin-top: 30px;
-  margin-right: 169px;
-}
-
-.about-photo img{
+// about me
+.about__photo img{
   padding-top: 117px;
   width: 350px;
 }
-
-.contac-boton {
-  margin-top: 100px;
+.about{
+  margin-bottom: 150px;
+  margin-top: 50px;
+}
+.about__info{
+  float: left;
+}
+.about__info--text{
+  color: $paragraph-color;
+  font-size: $paragraph-size;
+  letter-spacing: 1px;
+  line-height: 41px;
+  padding-top: 56px;
+  margin-right: 169px;
+  width: 661px;
+}
+.contact__boton {
+  margin-top: 50px;
 }

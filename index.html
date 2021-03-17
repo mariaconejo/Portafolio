@@ -5,188 +5,266 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Portafolio</title>
   </head>
   <body>
     <!--AQUI COMIENZA EL MENÚ-->
-    <div class="menu-bar">
+    <div class="menu__bar">
       <!--Logo del menú-->
-      <div class="menu-logo">
-        <a class="logo" href="#">
-          <img src="./img/logo.png" alt="logo">
+      <div class="menu__bar--image">
+        <a class="menu__bar--logo" href="#welcome">
+          <img src="./img/logo.svg" alt="logo">
         </a>
       </div>
       <!--Menú-bar-->
       <div class="nav">
-        <div class="nav-bar">
-          <ul class="nav-bar-icon">
-            <li><a rel="" href="#welcome"><img src="img/Home.svg" alt="Home" class="icon-nav"></a></li>
-            <li><a rel="" href="#about-me"><img src="img/Diamond.svg" alt="Home" class="icon-nav"></a></li>
-            <li><a rel="" href="#my-work"><img src="img/Pen.svg" alt="Home" class="icon-nav"></a></li>
-            <li><a rel="" href="#github"><img src="img/Pin.svg" alt="Home" class="icon-nav"></a></li>
-            <li><a rel="" href="#contac-me"><img src="img/Contact.svg" alt="Home" class="icon-nav"></a></li>
-            <li><a rel="" href="#thanks"><img src="img/Heart.svg" alt="Home" class="icon-nav"></a></li>
+        <div class="nav__bar">
+          <ul class="nav__bar--icon">
+            <li><a  href="#welcome"><img src="img/Home.svg" alt="home" class="icon__nav"></a><p class="text random__text"contenteditable="true">Home</p></li>
+            <li><a  href="#about"><img src="img/Diamond.svg" alt="about" class="icon__nav"></a><p class="text random__text"contenteditable="true">About</p></li>
+            <li><a  href="#work"><img src="img/Pen.svg" alt="pen" class="icon__nav"></a><p class="text random__text"contenteditable="true">Work</p></li>
+            <li><a  href="#github"><img src="img/github-logo.svg" alt="github" class="icon__nav"></a><p class="text random__text"contenteditable="true">GitHub</p></li>
+            <li><a  href="#blog"><img src="img/blog.svg" alt="blog" class="icon__nav"></a><p class="text random__text"contenteditable="true">Blog</p></li>
+            <li><a  href="#gallery"><img src="img/galerys.svg" alt="art" class="icon__nav"></a><p class="text random__text"contenteditable="true">Art</p></li>
+            <li><a  href="#contact"><img src="img/Contact.svg" alt="contact" class="icon__nav"></a><p class="text random__text"contenteditable="true">Contact</p></li>
+            <li><a  href="#thanks"><img src="img/Heart.svg" alt="heart" class="icon__nav"></a><p class="text random__text"contenteditable="true">Thanks</p></li>
           </ul>
         </div>
       </div>
     </div>
     <!--AQUI TERMINA EL MENÚ-->
     <!--AQUI COMIENZA EL CONTEINER PRINCIPAL-->
-    <div class="principal-conteiner">
+    <div class="principal__conteiner">
       <!--AQUI COMIENZA EL CONTEINER SECUNDARIO-->
-      <div class="second-conteiner">
+      <div class="second__conteiner">
+        <!--AQUI ESTA EL CAMBIO DE COLOR-->
+        <div>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
         <!--AQUI COMIENZA EL WELCOME -->
         <div class="welcome" id="welcome">
-          <div class="welcome-text">
+          <div class="welcome__text">
+          <span class="decoration__body">&ltbody&gt</span>
+          <span class="decoration__title">&lth1&gt</span>
             <h1>
               Hello,</br>
-              My name is</br><b class="glitch" data-glitch="Marie">Marie</b></br>
-              I'm Web Developer
+              My name is</br><span class="glitch" data-glitch="Marie">Marie</span></br>
+              I'm Web Developer<span class="decoration__body">&lt/h1&gt</span>
             </h1>
-            <p>Front End Developer and Software Engeenier</p>
+            <span class="decoration__body">&ltp&gt</span><p>and Software Engeenier</p><span class="decoration__body">&lt/p&gt</span>
           </div>
         </div>
         <!--AQUI TERMINA EL WELCOME-->
         <!--AQUI COMIENZA EL ABOUT ME-->
-        <div class="about clearfix" id="about-me">
-          <div class="about-info">
-            <h2 class="titles">&ltAbout me&gt</h2>
-            <p class="about-info-text">
+        <div class="about clearfix" id="about">
+          <div class="about__info">
+            <h2 class="titles"><span class="glitch" data-glitch="<About me>">&ltAbout me&gt</span></h2>
+            <span class="decoration__paragrah--open">&ltp&gt</span>
+            <p class="about__info--text">
               Lorem Ipsum is simply dummy text of the printing and
               typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
               when an unknown printer took a galley of type and it to make a type specimen book It has
               survived not only five centuries, but also the leap into
               electronic.
             </p>
-            <div class="contac-boton">
-              <a href="#" class="btn-link"><span class="link-inner">Contact</span></a>
+            <span class="decoration__paragrah">&lt/p&gt</span>
+            <div class="contact__boton">
+              <a href="#" class="contact__boton--link"><span class="link__inner">Contact</span></a>
             </div>
+            <span class="decoration__button">&lt/About me&gt</span>
           </div>
-          <div class="about-photo">
+          <div class="about__photo">
             <img src="./img/marie.jpg">
           </div>
         </div>
         <!--AQUI TERMINA EL ABOUT ME-->
         <!--AQUI COMIENZA MY WORK-->
-        <div class="work" id="my-work">
-          <h2 class="titles">&ltMy Work&gt</h2>
-          <div class="my-work">
-            <ul class="filtro-list">
-              <li>&ltli&gtAll&lt/li&gt</li>
-              <li>&ltli&gtJavascript&lt/li&gt</li>
-              <li>&ltli&gtHTML&lt/li&gt</li>
-              <li>&ltli&gtCSS&lt/li&gt</li>
-              <li>&ltli&gtCreative Code&lt/li&gt</li>
-            </ul>
+        <div class="work" id="work">
+          <span class="decoration__seccion">&ltdiv&gt</span>
+          <h2 class="titles"><span class="glitch" data-glitch="<My Work>">&ltMy Work&gt</span></h2>
+          <div class="my__work" id="categories">
+            <div class="categorie gradient__border" data-categoria="javascript">
+              <p>Javascript</p>
+            </div>
+            <div class="categorie gradient__border" data-categoria="ux">
+              <p>UX-UI</p>
+            </div>
+            <div class="categorie gradient__border" data-categoria="html-css">
+              <p>Html/css</p>
+            </div>
+            <div class="categorie gradient__border" data-categoria="componentes">
+              <p>Componentes</p>
+            </div>
           </div>
-          <div class="projects">
-            <ul class="projects-list">
-              <li>...</li>
-              <li>...</li>
-              <li>...</li>
-              <li>...</li>
-              <li>...</li>
-              <li>...</li>
-            </ul>
+          <div class="works__conteiner  " data-categoria="ux">
+            <div class="works__conteiner--proyects" class="item">
+              <figure><a  href="https://www.figma.com/file/FKwcVSwGK94sHeNadsRA1j/Venus" target="_blank"><img  src="img/joyería.png"></a></figure>
+              <a class="text__link"  data-content="Joyeria Venus" href="https://www.figma.com/file/FKwcVSwGK94sHeNadsRA1j/Venus" target="_blank">Joyería Venus</a>
+            </div>
+            <div class="works__conteiner--proyects">
+              <figure><a href="https://www.figma.com/file/PKoC5nLOW8t4ka65UwqGb5/Museo?node-id=37%3A57" target="_blank"><img src="img/museo.png"></a></figure>
+              <a class="text__link"  data-content="Museo de Antropologia" href="https://www.figma.com/file/PKoC5nLOW8t4ka65UwqGb5/Museo?node-id=37%3A57" target="_blank">Museo de Antropología</a>
+            </div>
           </div>
+          <div class="works__conteiner activo" data-categoria="javascript">
+            <div class="works__conteiner--proyects">
+              <figure><a href="https://mariaconejo.github.io/-countries.github.io/" target="_blank"><img  src="img/paises.png"></a></figure>
+              <a class="text__link"  data-content="Api Paises" href="https://mariaconejo.github.io/-countries.github.io/" target="_blank">Api Paises</a>
+            </div>
+            <div class="works__conteiner--proyects">
+              <figure><a href="https://mariaconejo.github.io/Formulario.github.io/" target="_blank"><img  src="img/formulario.png"></a></figure>
+              <a class="text__link"  data-content="Api Formulario" href="https://mariaconejo.github.io/Formulario.github.io/" target="_blank">Api Formulario</a>
+            </div>
+          </div>
+          <div class="works__conteiner" data-categoria="html-css">
+            <div class="works__conteiner--proyects">
+              <figure><a  href="https://mariaconejo.github.io/Bitcoins.github.io/" target="_blank"><img  src="img/bitcoins.png"></a></figure>
+              <a class="text__link"  data-content="Bitcoins" href="https://mariaconejo.github.io/Bitcoins.github.io/" target="_blank">Bitcoins</a>
+            </div>
+            <div class="works__conteiner--proyects">
+              <figure><a href="https://mariaconejo.github.io/Smile.github.io/" target="_blank"><img  src="img/smile.png"></a></figure>
+              <a class="text__link"  data-content="Smile" href="https://mariaconejo.github.io/Smile.github.io/" target="_blank">Smile</a>
+            </div>
+          </div>
+          <div class="works__conteiner" data-categoria="componentes">
+            <div class="works__conteiner--proyects">
+              <figure><a href="https://mariaconejo.github.io/Galeria.github.io/" target="_blank"><img  src="img/galery.png"></a></figure>
+              <a class="text__link"  data-content="Gallery" href="https://mariaconejo.github.io/Galeria.github.io/" target="_blank">Gallery</a>
+            </div>
+            <div class="works__conteiner--proyects">
+              <figure><img  src="img/movie.png"></figure>
+              <a class="text__link"  data-content="Movie Center" href="https://mariaconejo.github.io/Apimovies.github.io/" target="_blank">Movie Center</a>
+            </div>
+          </div>
+          <span class="decoration__body">&lt/div&gt</span>
+          <span class="decoration__work">&lt/My Work&gt</span>
         </div>
         <!--AQUI TERMINA MY WORK-->
         <!--AQUI COMIENZA GIT HUB-->
         <div class="github" id="github">
-          <h2 class="titles">&ltGitHub:mariaconejo&gt</h2>
+          <h2 class="titles"><span class="glitch" data-glitch="<Git Hub>">&ltGit Hub&gt</span></h2>
+          <span class="decoration__body--github">&ltdiv&gt</span>
           <div class="code">
-            <ul class="code-list">
+            <ul class="code__list">
               <!--AQUI VA JS-->
             </ul>
           </div>
+          <span class="decoration__body">&lt/github&gt</span>
         </div>
         <!--AQUI TERMINA GIT-HUB-->
         <!--AQUI COMIENZA EL BLOG-->
         <div class="blog" id="blog">
-          <h2 class="titles">&ltBlog&gt</h2>
+          <h2 class="titles"><span class="glitch" data-glitch="<Blog>">&ltBlog&gt</span></h2>
           <div class="articles">
-            <ul class="articles-list">
-              <li>...</li>
-              <li>...</li>
-              <li>...</li>
-            </ul>
+            <a class="twitter-timeline" href="https://twitter.com/Idontknowweb1?ref_src=twsrc%5Etfw">Tweets by Idontknowweb1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
+          <span class="decoration__blog">&lt/blog&gt</span>
         </div>
 
         <!--AQUI TERMINA EL BLOG-->
         <!--AQUI COMIENZA GALLERY-->
-        <div class="slider" id="gallery">
-          <h2 class="titles">&ltMy Art&gt</h2>
-          <div class="carousel">
-            <img name="slide1" width ="700px" height="700px"/>
+        <h2 class="titles"><span class="glitch" data-glitch="<Art>">&ltArt&gt</span></h2>
+        <div class="art__gallery" id="gallery">
+          <div class="gallery">
+            <div class="column">
+              <img src="img/dibujo.jpg" alt="dibujo-pixel-art">
+              <img src="img/dibujo-3.jpg" alt="dibujo-pixel-art">
+              <img src="img/dibujo-21.gif" alt="dibujo-pixel-art">
+              <img src="img/dibujo-5.png" alt="dibujo-pixel-art">
+              <img src="img/dibujo-19.png" alt="dibujo-pixel-art">
+              <img src="img/dibujo-22.png" alt="dibujo-pixel-art">
+            </div>
+            <div class="column">
+              <img src="img/dibujo-4.png" alt="dibujo-pixel-art">
+              <img src="img/dibujo-2.png" alt="dibujo-pixel-art">
+              <img src="img/dibujo-18.gif" alt="dibujo-pixel-art">
+              <img src="img/dibujo-10.jpg" alt="dibujo-pixel-art">
+              <img src="img/dibujo-11.png" alt="dibujo-pixel-art">
+              <img src="img/dibujo-12.png" alt="dibujo-pixel-art">
+            </div>
+            <div class="column">
+              <img src="img/dibujo-13.png" alt="dibujo-pixel-art">
+              <img src="img/dibujo-14.png" alt="dibujo-pixel-art">
+              <img src="img/dibujo-15.png" alt="dibujo-pixel-art">
+              <img src="img/dibujo-16.png" alt="dibujo-pixel-art">
+              <img src="img/fastasmon.png" alt="dibujo-pixel-art">
+              <img src="img/dibujo-20.png" alt="dibujo-pixel-art">
+            </div>
           </div>
-
+          <span class="decoration__art">&lt/art&gt</span>
         </div>
         <!--AQUI COMIENZA EL CONTACME-->
-        <div class="contac-me clearfix" id="contac-me">
-          <h2 class="titles">&ltConctac me&gt</h2>
+        <div class="contact clearfix" id="contact">
+          <h2 class="titles"><span class="glitch" data-glitch="<Contact>">&ltContact&gt</span></h2>
           <div class="form">
             <form>
+              <h3></h3>
               <label>Name</label>
-              <input  type="text"    name="nombre"   value="" required>
+              <input  type="text"    name="nombre"   value="" class="required">
               <label>E-mail</label>
-              <input  type="email"   name="correo"   value="" required>
-              <label>Subject</label>
-              <input  type="text"    name="asunto"   value="" required>
+              <input  type="email"   name="correo"   value="" class="required">
+              <label>Telphone</label>
+              <input  type="number"    name="asunto"   value="" class="required">
               <label>Message</label>
-              <textarea   name="mensaje" value="" required></textarea>
+              <textarea   name="mensaje" value="" class="required"></textarea>
+              <p class="check__mesaage"></p>
               <button id="send" type="submit">Send</button>
             </form>
           </div>
-          <div class="map box-contect">
+          <div class="contact__map">
             <img src="img/mapa.png">
           </div>
+          <span class="decoration__contact">&lt/contact&gt</span>
       </div>
       <!--AQUI COMIENZA LOS AGRADECIMIENTOS-->
       <div class="thanks" id="thanks">
-        <h2 class="titles">&ltThanks&gt</h2>
+        <h2 class="titles"><span class="glitch" data-glitch="<Thanks>">&ltThanks&gt</span></h2>
         <div class="people">
-          <table class="people-list">
+          <table class="people__list">
             <tr>
-              <td><a href="#" class="line-link">Paula Zuñiga</a></td>
-              <td><a href="#" class="line-link">Vieyra Ureña</a></td>
-              <td><a href="#" class="line-link">Karen Méndez</a></td>
-              <td><a href="#" class="line-link">José Ramos</a></td>
-              <td><a href="#" class="line-link">Jean Toruño</a></td>
-              <td><a href="#" class="line-link">Jeremy Acuña</a></td>
+              <td><a href="#" class="line__link">Paula Zuñiga</a></td>
+              <td><a href="https://github.com/vieyraurena" class="line__link">Vieyra Ureña</a></td>
+              <td><a href="#" class="line__link">Karen Méndez</a></td>
+              <td><a href="#" class="line__link">José Ramos</a></td>
+              <td><a href="#" class="line__link">Jean Toruño</a></td>
+              <td><a href="#" class="line__link">Jeremy Acuña</a></td>
             </tr>
             <tr>
-              <td><a href="#" class="line-link">Jeampaul Salazar</a></td>
-              <td><a href="#" class="line-link">Esteban Sanchéz</a></td>
-              <td><a href="#" class="line-link">Kendoll Castro</a></td>
-              <td><a href="#" class="line-link">Jeareth Venegas</a></td>
-              <td><a href="#" class="line-link">Daniela Capo</a></td>
-              <td><a href="#" class="line-link">Natalia Alfaro</a></td>
+              <td><a href="#" class="line__link">Jeampaul Salazar</a></td>
+              <td><a href="#" class="line__link">Esteban Sanchéz</a></td>
+              <td><a href="#" class="line__link">Kendoll Castro</a></td>
+              <td><a href="#" class="line__link">Jeareth Venegas</a></td>
+              <td><a href="#" class="line__link">Daniela Capo</a></td>
+              <td><a href="#" class="line__link">Natalia Alfaro</a></td>
             </tr>
             <tr>
-              <td><a href="#" class="line-link">Gabriel Cartín</a></td>
-              <td><a href="#" class="line-link">Erika Acosta</a></td>
-              <td><a href="#" class="line-link">Justin Madrigal</a></td>
-              <td><a href="#" class="line-link">Ignacio Campos</a></td>
-              <td><a href="#" class="line-link">Alexa Piedra</a></td>
-              <td><a href="#" class="line-link">Alonso Zumbado</a></td>
+              <td><a href="#" class="line__link">Gabriel Cartín</a></td>
+              <td><a href="#" class="line__link">Erika Acosta</a></td>
+              <td><a href="#" class="line__link">Justin Madrigal</a></td>
+              <td><a href="#" class="line__link">Ignacio Campos</a></td>
+              <td><a href="#" class="line__link">Alexa Piedra</a></td>
+              <td><a href="#" class="line__link">Alonso Zumbado</a></td>
             </tr>
             <tr>
-              <td><a href="#" class="line-link">Fabian Barquero</a></td>
-              <td><a href="#" class="line-link">Rebekka Reitcher</a></td>
-              <td><a href="#" class="line-link">Stephanie Hazarella</a></td>
-              <td><a href="#" class="line-link">Nadeska Cordová</a></td>
-              <td><a href="#" class="line-link">Tamara Goth</a></td>
-              <td><a href="#" class="line-link">Abyssh Lopez</a></td>
+              <td><a href="#" class="line__link">Fabian Barquero</a></td>
+              <td><a href="#" class="line__link">Rebekka Reitcher</a></td>
+              <td><a href="#" class="line__link">Stephanie Hazarella</a></td>
+              <td><a href="#" class="line__link">Nadeska Cordová</a></td>
+              <td><a href="#" class="line__link">Tamara Goth</a></td>
+              <td><a href="#" class="line__link">Abyssh Lopez</a></td>
             </tr>
           </table>
         </div>
+        <span class="decoration__thanks">&lt/thanks&gt</span>
       </div>
       <!--AQUI TERMINA LOS AGRADECIMIENTOS-->
       </div>
     </div>
     <script src="js/script.js"></script>
-
   </body>
 </html>

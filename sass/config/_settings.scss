@@ -1,23 +1,48 @@
-$button: #8A1CBD;
-$font: 'Cousine', monospace;
-$glitch-color-1:#FA419C;
-$glitch-color-2:#3908cc;
-$menu-background: #181818;
-$paragraph: #fff;
-$wrapper-background: #1D1D1D;
-$violet-title: #DA8AF0;
+// Paleta de color
+$black-menu: #181818;
+$blue:#3908cc;
+$font-decoration-color:#4F4F50;
+$green: #BACDCC;
+$pink:#FA419C;
+$purple: #8A1CBD;
+$red: #E5454C;
+$violet: #DA8AF0;
+$white: #fff;
+$wrapper-black: #1D1D1D;
+
+// Fonts
+$font-principal: 'Cousine', monospace;
+$font-decoration: 'Satisfy', cursive;
 
 
+// Variantes de color
+$filtro-svg: invert(53%) sepia(58%) saturate(5358%) hue-rotate(304deg) brightness(96%) contrast(104%);
+$gray-escale: rgba(0, 0, 0, 0.692);
+$hover-rgb-1: rgba(114, 33, 139, 0.493);
+$hover-rgb-2: rgba(61, 3, 221, 0.377);
 
+// Size
+$font-size-component: 24px;
+$font-size-link: 16px;
+$font-size-paragraph: 20px;
+$font-size-subtitle: 45px;
+$font-size-title-principal: 48px;
 
+//Variables
+$backgroud-body: $wrapper-black;
+$backgroud-menu: $black-menu;
+$filtro:$filtro-svg;
+$font-color-button: $purple;
+$font-size-button: font-size-component;
+$glitch-color-one: $pink;
+$glitch-color-two: $blue;
+$paragraph-color: $white;
+$paragraph-size:$font-size-paragraph;
+$subtitle-size:$font-size-subtitle;
+$title-principal-color:$violet;
+$title-principal-size: $font-size-title-principal;
+$validation: $green;
+$warning: $red;
 
-
-
-
-// size
-
-
-
-// margin
 
 
