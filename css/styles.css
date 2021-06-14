@@ -349,9 +349,16 @@ ul {
   position: absolute;
   text-decoration: none; }
 
-.about__photo img {
-  padding-top: 117px;
-  width: 350px; }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+canvas {
+  opacity: 0;
+  background: transparent;
+  animation: fadeIn 1s ease-in-out 0.3s 1 forwards; }
 
 .about {
   margin-bottom: 150px;
@@ -362,12 +369,12 @@ ul {
 
 .about__info--text {
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 1px;
   line-height: 41px;
   padding-top: 56px;
   margin-right: 169px;
-  width: 661px; }
+  width: 511px; }
 
 .contact__boton {
   margin-top: 50px; }
@@ -793,207 +800,207 @@ ul li:hover .text {
 
 @keyframes cray {
   2% {
-    font-weight: 100;
+    font-weight: 300;
     font-style: normal;
-    text-decoration: underline;
+    text-decoration: none;
     text-transform: none; }
   4% {
     font-weight: 300;
     font-style: normal;
-    text-decoration: none;
-    text-transform: lowercase; }
-  6% {
-    font-weight: 700;
-    font-style: normal;
-    text-decoration: none;
+    text-decoration: line-through;
     text-transform: none; }
-  8% {
-    font-weight: 500;
+  6% {
+    font-weight: 400;
     font-style: normal;
     text-decoration: underline;
     text-transform: none; }
-  10% {
-    font-weight: 300;
+  8% {
+    font-weight: 600;
     font-style: normal;
     text-decoration: none;
     text-transform: none; }
+  10% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: line-through;
+    text-transform: none; }
   12% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none; }
+  14% {
     font-weight: 500;
     font-style: normal;
     text-decoration: none;
     text-transform: none; }
-  14% {
-    font-weight: 200;
-    font-style: italic;
-    text-decoration: line-through;
-    text-transform: none; }
   16% {
-    font-weight: 200;
-    font-style: italic;
-    text-decoration: line-through;
-    text-transform: none; }
-  18% {
     font-weight: 700;
-    font-style: italic;
-    text-decoration: line-through;
-    text-transform: none; }
-  20% {
-    font-weight: 300;
     font-style: normal;
     text-decoration: none;
+    text-transform: lowercase; }
+  18% {
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: none; }
+  20% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: line-through;
     text-transform: none; }
   22% {
-    font-weight: 300;
+    font-weight: 200;
     font-style: normal;
     text-decoration: none;
     text-transform: none; }
   24% {
     font-weight: 600;
-    font-style: normal;
-    text-decoration: underline;
+    font-style: italic;
+    text-decoration: none;
     text-transform: none; }
   26% {
-    font-weight: 600;
+    font-weight: 300;
     font-style: normal;
     text-decoration: none;
     text-transform: none; }
   28% {
-    font-weight: 400;
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: lowercase; }
+  30% {
+    font-weight: 500;
     font-style: normal;
     text-decoration: none;
-    text-transform: none; }
-  30% {
-    font-weight: 700;
-    font-style: normal;
-    text-decoration: line-through;
-    text-transform: none; }
+    text-transform: uppercase; }
   32% {
-    font-weight: 700;
-    font-style: italic;
+    font-weight: 500;
+    font-style: normal;
     text-decoration: none;
     text-transform: none; }
   34% {
     font-weight: 500;
-    font-style: normal;
-    text-decoration: underline;
-    text-transform: none; }
-  36% {
-    font-weight: 300;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none; }
-  38% {
-    font-weight: 600;
     font-style: italic;
-    text-decoration: none;
+    text-decoration: underline;
     text-transform: capitalize; }
+  36% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase; }
+  38% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none; }
   40% {
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
     text-decoration: line-through;
-    text-transform: uppercase; }
+    text-transform: none; }
   42% {
-    font-weight: 300;
+    font-weight: 700;
     font-style: normal;
-    text-decoration: none;
+    text-decoration: line-through;
     text-transform: none; }
   44% {
     font-weight: 600;
-    font-style: italic;
-    text-decoration: line-through;
-    text-transform: uppercase; }
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none; }
   46% {
-    font-weight: 100;
+    font-weight: 400;
     font-style: normal;
     text-decoration: none;
     text-transform: none; }
   48% {
-    font-weight: 700;
-    font-style: normal;
-    text-decoration: line-through;
-    text-transform: lowercase; }
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none; }
   50% {
-    font-weight: 200;
-    font-style: normal;
-    text-decoration: line-through;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: none;
     text-transform: none; }
   52% {
     font-weight: 600;
     font-style: normal;
-    text-decoration: none;
-    text-transform: none; }
+    text-decoration: underline;
+    text-transform: capitalize; }
   54% {
-    font-weight: 400;
-    font-style: italic;
+    font-weight: 700;
+    font-style: normal;
     text-decoration: none;
     text-transform: none; }
   56% {
     font-weight: 300;
     font-style: normal;
-    text-decoration: line-through;
-    text-transform: none; }
+    text-decoration: none;
+    text-transform: capitalize; }
   58% {
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: line-through;
+    text-transform: capitalize; }
+  60% {
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none; }
+  62% {
     font-weight: 500;
     font-style: normal;
     text-decoration: none;
     text-transform: none; }
-  60% {
-    font-weight: 700;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none; }
-  62% {
-    font-weight: 300;
-    font-style: italic;
-    text-decoration: none;
-    text-transform: none; }
   64% {
-    font-weight: 300;
+    font-weight: 100;
     font-style: italic;
     text-decoration: none;
-    text-transform: none; }
+    text-transform: lowercase; }
   66% {
-    font-weight: 700;
-    font-style: italic;
-    text-decoration: none;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: line-through;
     text-transform: none; }
   68% {
     font-weight: 500;
     font-style: normal;
-    text-decoration: none;
-    text-transform: lowercase; }
-  70% {
-    font-weight: 200;
-    font-style: italic;
-    text-decoration: none;
-    text-transform: uppercase; }
-  72% {
-    font-weight: 700;
-    font-style: italic;
     text-decoration: line-through;
     text-transform: none; }
+  70% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none; }
+  72% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none; }
   74% {
-    font-weight: 600;
+    font-weight: 200;
     font-style: normal;
     text-decoration: none;
     text-transform: none; }
   76% {
-    font-weight: 200;
-    font-style: normal;
+    font-weight: 500;
+    font-style: italic;
     text-decoration: none;
     text-transform: none; }
   78% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: capitalize; }
+  80% {
     font-weight: 200;
     font-style: normal;
     text-decoration: none;
-    text-transform: none; }
-  80% {
-    font-weight: 700;
-    font-style: italic;
-    text-decoration: none;
     text-transform: lowercase; }
   82% {
-    font-weight: 500;
+    font-weight: 700;
     font-style: italic;
     text-decoration: none;
     text-transform: none; }
@@ -1001,39 +1008,39 @@ ul li:hover .text {
     font-weight: 100;
     font-style: normal;
     text-decoration: none;
-    text-transform: none; }
-  86% {
-    font-weight: 500;
-    font-style: italic;
-    text-decoration: none;
     text-transform: uppercase; }
-  88% {
-    font-weight: 500;
+  86% {
+    font-weight: 200;
     font-style: normal;
-    text-decoration: underline;
+    text-decoration: none;
+    text-transform: none; }
+  88% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
     text-transform: none; }
   90% {
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
-    text-decoration: none;
-    text-transform: uppercase; }
-  92% {
-    font-weight: 500;
-    font-style: italic;
     text-decoration: none;
     text-transform: none; }
-  94% {
-    font-weight: 400;
+  92% {
+    font-weight: 600;
     font-style: normal;
+    text-decoration: line-through;
+    text-transform: none; }
+  94% {
+    font-weight: 300;
+    font-style: italic;
     text-decoration: none;
     text-transform: none; }
   96% {
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
     text-decoration: none;
     text-transform: none; }
   98% {
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
     text-decoration: none;
     text-transform: none; } }
