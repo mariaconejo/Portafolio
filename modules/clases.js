@@ -49,7 +49,7 @@ function moveEyes() {
         }
 ];
    // le aplica a todo el elemento la funcion position y permite que la pupila pueda moverse dentro y fuera del ojo
-    const eyePositions = eyesPositions.map(Position);
+    const eyePositions = eyesPositions.map(position);
 
     eyePositions.forEach((element) => {
         ctx().drawImage(eyesImage,
