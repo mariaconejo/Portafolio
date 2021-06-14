@@ -1,4 +1,4 @@
-import { Position, ctx, canvas } from './util.js'
+import { position, ctx, canvas } from './util.js'
 // Aqui estan las clases de face y mask
 class Face{
     constructor(face,moveX,moveY) {

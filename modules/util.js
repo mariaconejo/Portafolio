@@ -36,7 +36,7 @@ function getVector(a, b) {
     };
 }
 // funcion que optiene la posicion inicial del mouse y la pupila y si es menor al radio del ojo me retorna la posision del mouse
-function Position(eyePosition) {
+function position(eyePosition) {
     if (distanceBetweenPoints(eyePosition, mousePosition) <= eyeMoveRadius) {
         return mousePosition;
 }
@@ -60,5 +60,5 @@ export{
     mousePosition,
     canvas,
     ctx,
-    Position
+    position
 }
